@@ -8,7 +8,7 @@ public class main {
         BufferedReader reader = new BufferedReader(new FileReader("MapleAPI\\src\\config.txt"));
         String apikey = reader.readLine().split(":")[1].strip();
 
-        MapleAPIViewer m = new MapleAPIViewer(apikey);
+        MapleAPI m = new MapleAPI(apikey);
         System.out.println(m.getCharOcid("이름"));
         System.out.println(m.getCharData(m.getCharOcid("이름"), "2023-12-22", "propensity"));
 
