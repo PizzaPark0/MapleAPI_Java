@@ -9,12 +9,12 @@ public class main {
         String apikey = reader.readLine().split(":")[1].strip();
 
         MapleAPIViewer m = new MapleAPIViewer(apikey);
-        System.out.println(m.getCharOcid("깜시랑"));
-        System.out.println(m.getCharData(m.getCharOcid("깜시랑"), "2023-12-22", "propensity"));
+        System.out.println(m.getCharOcid("이름"));
+        System.out.println(m.getCharData(m.getCharOcid("이름"), "2023-12-22", "propensity"));
 
-        System.out.println(m.getGuildOguildid("생활방식", "루나"));
-        System.out.println(m.getGuildData(m.getGuildOguildid("생활방식", "루나"), "2023-12-22", "basic"));
+        System.out.println(m.getGuildOguildid("길드", "서버"));
+        System.out.println(m.getGuildData(m.getGuildOguildid("길드", "서버"), "2023-12-22", "basic"));
 
-        System.out.println(m.getUnionData(m.getCharOcid("깜시랑"), "2023-12-22", "union-raider"));
+        System.out.println(m.getUnionData(m.getCharOcid("이름"), "2023-12-22", "union-raider"));
     }
 }
