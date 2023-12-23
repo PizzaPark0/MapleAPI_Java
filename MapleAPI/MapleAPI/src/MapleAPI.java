@@ -7,11 +7,11 @@ import java.net.HttpURLConnection;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
-public class MapleAPIViewer{
+public class MapleAPI{
     String apiKey;
     HttpURLConnection connection;
 
-    MapleAPIViewer(String apiKey)
+    MapleAPI(String apiKey)
     {
         this.apiKey = apiKey;
     }
